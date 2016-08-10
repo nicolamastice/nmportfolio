@@ -1,0 +1,45 @@
+.navbar.navbar-static-top {
+  background-color: white;
+  position: fixed;
+  padding-bottom: 2%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top .navbar-brand {
+  height: 80px;
+}
+
+.top .nav >li >a {
+  color: #393C43;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.top .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.twentytwenty-container {
+  position: relative;
+}
+
+.project-description {
+  position: absolute;
+  padding: 25px;
+  left: 10%;
+  width: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  color: white;
+  z-index: -1;
+  opacity: 0;
+}
+
+.twentytwenty-overlay:hover .project-description {
+  z-index: 9999;
+  opacity: 1;
+}

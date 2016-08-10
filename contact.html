@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link href="./css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="top">
+  <nav class="navbar navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./index.html"><img src="./images/logo.jpg" alt="Logo"></a>
+      </div>
+      <div id="navbar3">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+	<div class="row" style="margin-top: 8em;">
+		<div class="large-8 columns">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-7">
+					<p><strong>Nicola Mastice</strong></p> 
+					<br>
+					<p>t: +44 (0)7474 909 909</p>
+					<p>e: masticenicola@gmail.com</p>
+					<p>w: www.enemdesign.com</p>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</div>
+	</div>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="./js/jquery.event.move.js"></script>
+		<script src="./js/jquery.twentytwenty.js"></script>
+		<script>
+		$(window).load(function(){
+			$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+			$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+		});
+		</script>
+</body>
+</html>
